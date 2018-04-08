@@ -5,11 +5,12 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
-  color: #222;
+  color: #94618e;
+  background-color: #f8eee7;
 }
-
 .navbar {
   padding: 0.4rem;
+  background-color: #f8eee7 !important;
 }
 .navbar-nav li {
   padding-right: 1.3em;
@@ -19,7 +20,8 @@ body {
   margin-right: 0.4em;
   padding: 0.2rem;
 }
-.navlink {
+.nav-link {
+  color: #94618e !important;
   font-size: 1.1em !important;
 }
 .padding {
@@ -30,86 +32,62 @@ body {
   padding-top: 3rem;
   margin: 0;
 }
-.intro_name {
+.intro-name {
   background-color: #94618e;
   color: #f8eee7;
 }
-.intro_skill {
+.intro-skill {
   background-color: #f8eee7;
   color: #94618e;
 }
-.intro_hi,
-.intro_my,
-.intro_ian,
-.intro_im,
-.intro_fs,
-.intro_js,
-.intro_dev {
+.intro-hi,
+.intro-my,
+.intro-ian,
+.intro-im,
+.intro-fs,
+.intro-js,
+.intro-dev {
   display: block;
 }
-.intro_hi {
+.intro-hi {
   font-size: 7rem;
   font-weight: 600;
 }
-.intro_my {
+.intro-my {
   font-size: 4rem;
   font-weight: 500;
 }
-.intro_ian {
+.intro-ian {
   font-size: 10rem;
   font-weight: 700;
 }
-.intro_im {
+.intro-im {
   margin-top: 4rem;
   font-size: 3rem;
   font-weight: 500;
 }
-.intro_fs {
+.intro-fs {
   font-size: 3rem;
   font-weight: 500;
 }
-.intro_js {
+.intro-js {
   font-size: 4.5rem;
   font-weight: 600;
 }
-.intro_dev {
+.intro-dev {
   font-size: 4.5rem;
   font-weight: 600;
 }
-.fa-code,
-.fa-bold,
-.fa-css3 {
-  font-size: 4em;
-  margin: 1rem;
-}
-.fa-code {
-  color: #e54d26;
-}
-.fa-bold {
-  color: #563d7c;
-}
-.fa-css3 {
-  color: #2163af;
-}
-.fun {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.gif {
-  max-width: 100%;
+.skills {
+  padding-top: 4rem;
 }
 .social a {
   font-size: 4.5em;
   padding: 3rem;
 }
-.fa-twitter {
-  color: #00aced;
-}
-.fa-google-plus-g {
+
+.fa-envelope {
   color: #dd4b39;
-}
-.fa-youtube {
-  color: #bb0000;
 }
 .fa-linkedin {
   color: #0077b5;
@@ -152,72 +130,72 @@ hr.light-100 {
   }
 }
 @media (max-width: 900px) {
-  .intro_hi {
+  .intro-hi {
     font-size: 6rem;
     font-weight: 600;
   }
-  .intro_my {
+  .intro-my {
     font-size: 3rem;
     font-weight: 500;
   }
-  .intro_ian {
+  .intro-ian {
     font-size: 9rem;
     font-weight: 700;
   }
-  .intro_im {
+  .intro-im {
     font-size: 2rem;
     font-weight: 500;
   }
-  .intro_fs {
+  .intro-fs {
     font-size: 2rem;
     font-weight: 500;
   }
-  .intro_js {
+  .intro-js {
     font-size: 3.5rem;
     font-weight: 600;
   }
-  .intro_dev {
+  .intro-dev {
     font-size: 3.5rem;
     font-weight: 600;
   }
 }
 @media (max-width: 768px) {
-  .intro_hi,
-  .intro_my,
-  .intro_ian {
+  .intro-hi,
+  .intro-my,
+  .intro-ian {
     margin: -1.5rem;
   }
-  .intro_hi {
+  .intro-hi {
     font-size: 5rem;
     font-weight: 500;
   }
-  .intro_my {
+  .intro-my {
     font-size: 2rem;
     font-weight: 400;
   }
-  .intro_ian {
+  .intro-ian {
     font-size: 8rem;
     font-weight: 600;
   }
-  .intro_im,
-  .intro_fs,
-  .intro_js,
-  .intro_dev {
+  .intro-im,
+  .intro-fs,
+  .intro-js,
+  .intro-dev {
     margin: 0rem;
   }
-  .intro_im {
+  .intro-im {
     font-size: 2rem;
     font-weight: 400;
   }
-  .intro_fs {
+  .intro-fs {
     font-size: 2rem;
     font-weight: 400;
   }
-  .intro_js {
+  .intro-js {
     font-size: 3rem;
     font-weight: 600;
   }
-  .intro_dev {
+  .intro-dev {
     font-size: 3rem;
     font-weight: 600;
   }
