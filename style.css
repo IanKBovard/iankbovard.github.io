@@ -93,6 +93,8 @@ body {
 }
 .experience {
   background-color: #fff;
+  margin: 0rem;
+  padding: 0rem;
 }
 .social a {
   font-size: 4.5em;
