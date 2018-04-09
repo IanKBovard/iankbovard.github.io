@@ -81,18 +81,25 @@ body {
 .me {
   padding-top: 4rem;
   background-color: #fff;
-}
-.me {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
-
+.me-contact {
+  text-decoration: none !important;
+  color: #94618e;
+}
+.to-contact {
+  text-decoration: none !important;
+}
+.to-contact:hover {
+}
 .me-shared,
 .me-edu,
 .me-clean,
 .me-gaming,
 .me-bizarre,
-.me-learn {
+.me-learn,
+.me-contact {
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -206,7 +213,6 @@ body {
   -webkit-transform: translatey(0);
   transform: translatey(0);
 }
-
 .fa-envelope {
   color: #dd4b39;
 }
@@ -215,10 +221,13 @@ body {
 }
 .fa-github {
   color: #333;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 .fa-envelope:hover,
 .fa-linkedin:hover,
-.fa-github:hover {
+.fa-github:hover,
+.me-contact:hover {
   color: #d5d5d5;
 }
 .footer {
@@ -262,6 +271,10 @@ body {
     font-size: 3.5rem;
     font-weight: 600;
   }
+  .fa-github {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 @media (max-width: 768px) {
   .intro-hi,
@@ -303,15 +316,15 @@ body {
     font-size: 3rem;
     font-weight: 600;
   }
-  .social a {
-    font-size: 2.5em;
-    padding: 1.2rem;
+  .fa-github {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 @media (max-width: 576px) {
   .social a {
-    font-size: 2em;
-    padding: 0.7rem;
+    font-size: 3.5em;
+    padding: 1.4rem;
   }
 }
 
