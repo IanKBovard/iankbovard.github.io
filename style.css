@@ -83,7 +83,7 @@ body {
   background-color: #fff;
 }
 .me {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   margin-top: 2rem;
 }
 
@@ -112,11 +112,11 @@ body {
   text-align: center;
   cursor: default;
 }
-.col-sm-4 {
+.col-sm-3 {
   max-height: 20rem;
   max-width: 20rem;
 }
-.col-sm-4 img {
+.col-sm-3 img {
   display: block;
   width: 100%;
   height: auto;

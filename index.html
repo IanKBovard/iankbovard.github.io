@@ -52,7 +52,7 @@
   </div>
 </div>
 
-<!--- about me -->
+<!--- about -->
 <div class="container-fluid me" id="me">
       <h1>about me</h1>
     <div class="col-lg-12">
@@ -74,7 +74,7 @@
 <div class="container-fluid padding work" id="work">
     <h1 class="padding">what i've done</h1>
   <div class="row padding justify-content-center">
-    <div class="col-sm-4 img-container">
+    <div class="col-sm-3 img-container">
       <a href="https://www.jrdevleague.com/">
         <div class="hovereffect">
           <img class="img-responsive" src="img/jrdevleague.png" alt="">
@@ -87,7 +87,7 @@
         </div>
       </a>
     </div>
-      <div class="col-sm-4 img-container">
+      <div class="col-sm-3 img-container">
         <a href="https://itunes.apple.com/us/app/blue-planet-energy-system-monitoring/id1205029096?platform=iphone&preserveScrollPosition=true#platform/iphone">
           <div class="hovereffect">
             <img class="img-responsive" src="img/bpe.png" alt="">
@@ -100,7 +100,7 @@
         </div>
         </a>
     </div>
-    <div class="col-sm-4 img-container">
+    <div class="col-sm-3 img-container">
       <a href="http://www.ryion.com/">
         <div class="hovereffect">
             <img class="img-responsive" src="img/ryion.png" alt="">
@@ -109,6 +109,19 @@
                <span>javascript</span>
                <span>graphQl/apollo</span>
                <span>reactJS</span>
+            </div>
+        </div>
+      </a>
+    </div>
+        <div class="col-sm-3 img-container">
+      <a href="https://globalgamejam.org/2018/games/hungry-bat">
+        <div class="hovereffect">
+            <img class="img-responsive" src="img/hungrybat.jpg" alt="">
+            <div class="overlay">
+               <h2>honolulu global gam jam</h2>
+               <span>javascript</span>
+               <span>phaser</span>
+               <span>first place for most creative</span>
             </div>
         </div>
       </a>
@@ -135,7 +148,7 @@
   </div>
 </div>
 
-<!--- Scroll Animations and disable hover on touchscreen devices-->
+<!--- Scroll Animations -->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
   $('a[href^="#"]').on('click', function(event) {
@@ -150,39 +163,6 @@
   window.sr = ScrollReveal({reset: true})
   sr.reveal('.intro-name',{duration:2000, origin: 'bottom'})
   sr.reveal('.intro-skill',{duration:2000, origin: 'bottom'})
-  function watchForHover() {
-    var hasHoverClass = false;
-    var container = document.body;
-    var lastTouchTime = 0;
-
-    function enableHover() {
-        // filter emulated events coming from touch events
-        if (new Date() - lastTouchTime < 500) return;
-        if (hasHoverClass) return;
-
-        container.className += ' hasHover';
-        hasHoverClass = true;
-    }
-
-    function disableHover() {
-        if (!hasHoverClass) return;
-
-        container.className = container.className.replace(' hasHover', '');
-        hasHoverClass = false;
-    }
-
-    function updateLastTouchTime() {
-        lastTouchTime = new Date();
-    }
-
-    document.addEventListener('touchstart', updateLastTouchTime, true);
-    document.addEventListener('touchstart', disableHover, true);
-    document.addEventListener('mousemove', enableHover, true);
-
-    enableHover();
-}
-
-watchForHover();
 </script>
 </body>
 </html>
