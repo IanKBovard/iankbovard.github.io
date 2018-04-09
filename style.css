@@ -83,7 +83,7 @@ body {
   background-color: #fff;
 }
 .me {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   margin-top: 3rem;
 }
 
@@ -97,6 +97,7 @@ body {
   font-weight: 500;
 }
 .work {
+  padding-top: 3rem;
   background-color: #fff;
 }
 .social a {
