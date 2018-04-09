@@ -52,7 +52,7 @@
   </div>
 </div>
 
-<!--- Two Column Section -->
+<!--- about me -->
 <div class="container-fluid me" id="me">
       <h1>about me</h1>
     <div class="col-lg-12">
@@ -70,9 +70,9 @@
     </div>
   </div>
 </div>
-<!--- Experience -->
+<!--- what i've done -->
 <div class="container-fluid padding work" id="work">
-    <h1>what i've done</h1>
+    <h1 class="padding">what i've done</h1>
   <div class="row padding justify-content-center">
     <div class="col-sm-4 img-container">
       <a href="https://www.jrdevleague.com/">
@@ -135,7 +135,7 @@
   </div>
 </div>
 
-<!--- Scroll Animations -->
+<!--- Scroll Animations and disable hover on touchscreen devices-->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
   $('a[href^="#"]').on('click', function(event) {
@@ -150,6 +150,39 @@
   window.sr = ScrollReveal({reset: true})
   sr.reveal('.intro-name',{duration:2000, origin: 'bottom'})
   sr.reveal('.intro-skill',{duration:2000, origin: 'bottom'})
+  function watchForHover() {
+    var hasHoverClass = false;
+    var container = document.body;
+    var lastTouchTime = 0;
+
+    function enableHover() {
+        // filter emulated events coming from touch events
+        if (new Date() - lastTouchTime < 500) return;
+        if (hasHoverClass) return;
+
+        container.className += ' hasHover';
+        hasHoverClass = true;
+    }
+
+    function disableHover() {
+        if (!hasHoverClass) return;
+
+        container.className = container.className.replace(' hasHover', '');
+        hasHoverClass = false;
+    }
+
+    function updateLastTouchTime() {
+        lastTouchTime = new Date();
+    }
+
+    document.addEventListener('touchstart', updateLastTouchTime, true);
+    document.addEventListener('touchstart', disableHover, true);
+    document.addEventListener('mousemove', enableHover, true);
+
+    enableHover();
+}
+
+watchForHover();
 </script>
 </body>
 </html>
