@@ -6,7 +6,7 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: #94618e;
-  background-color: #f8eee7;
+  background-color: #fff;
 }
 .navbar {
   padding: 0.4rem;
@@ -30,7 +30,7 @@ body {
 .welcome {
   width: 100%;
   padding-top: 3rem;
-  margin: 0;
+  margin: 0rem;
 }
 .intro-name {
   background-color: #94618e;
@@ -82,6 +82,9 @@ body {
   padding-top: 4rem;
   background-color: #fff;
 }
+.me {
+  margin-bottom: 8rem;
+}
 .me-shared,
 .me-edu,
 .me-clean,
@@ -91,10 +94,8 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.experience {
+.work {
   background-color: #fff;
-  margin: 0rem;
-  padding: 0rem;
 }
 .social a {
   font-size: 4.5em;
@@ -109,7 +110,15 @@ body {
   text-align: center;
   cursor: default;
 }
-
+.col-sm-4 {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+.col-sm-4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .hovereffect .overlay {
   width: 100%;
   height: 100%;
@@ -118,7 +127,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  background-color: #f8eee7;
+  background-color: #fff;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -135,14 +144,13 @@ body {
   color: #94618e;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 1rem;
   background: #fff;
   -webkit-transform: translatey(-100px);
   -ms-transform: translatey(-100px);
   transform: translatey(-100px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  padding: 10px;
 }
 .hovereffect span {
   color: #94618e;
@@ -191,6 +199,12 @@ body {
 .fa-linkedin:hover,
 .fa-github:hover {
   color: #d5d5d5;
+}
+.footer {
+  background-color: #f8eee7;
+}
+.top-link {
+  background-color: #f8eee7;
 }
 .to-top {
   color: #94618e !important;
