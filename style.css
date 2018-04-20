@@ -275,6 +275,15 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .hovereffect h2 {
+    font-size: 0.8rem;
+  }
+  .hovereffect span {
+    font-size: 0.6rem;
+  }
+  .hovereffect a {
+    font-size: 1.3rem;
+  }
 }
 @media (max-width: 768px) {
   .intro-hi,
@@ -325,6 +334,15 @@ body {
   .social a {
     font-size: 3.5em;
     padding: 1.4rem;
+  }
+  .hovereffect h2 {
+    font-size: 1rem;
+  }
+  .hovereffect span {
+    font-size: 0.8rem;
+  }
+  .hovereffect a {
+    font-size: 1.5rem;
   }
 }
 
